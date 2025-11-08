@@ -6,7 +6,7 @@ variable "tags" {
     default = {
 
         Terraform = true
-        Name = "catalogue"
+        Name = "Catalogue"
     }
 }
 
