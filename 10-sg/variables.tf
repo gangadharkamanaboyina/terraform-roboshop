@@ -1,20 +1,21 @@
 variable "project" {
-    default = "Roboshop"
+    default = "ExpenseApp"
 }
 
 variable "env" {
-    default = "dev"
+    default = "prod"
 }
 
 variable "tags" {
     default = {
-        Project = "Roboshop"
-        Environment = "dev"
+        Project = "ExpenseApp"
+        Environment = "prod"
         Terraform = "True"
         DoNotDelete = "True"
     }
 }
 
-# variable "vpc_id" {
-#   type = string
-# }
+variable "names" {
+  type = list
+  default = ["backend", "mysql", "frontend", "bastion"]
+}
